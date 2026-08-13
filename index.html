@@ -58,57 +58,48 @@
           </ul>
         </div>
 
-        <div class="hero-art" aria-label="Illustration of Camino Planner showing a route from Sarria to Santiago">
+        <div class="hero-art" aria-label="A source-matched preview of the Camino Planner Journeys tab">
           <div class="hero-sun" aria-hidden="true"></div>
           <div class="contour contour-one" aria-hidden="true"></div>
           <div class="contour contour-two" aria-hidden="true"></div>
 
-          <div class="phone">
+          <div class="phone app-screen journey-screen">
             <div class="phone-bar"><span>9:41</span><span>● ◒ ▰</span></div>
-            <div class="phone-header">
-              <img src="assets/long-slow-travel-mark.png" alt="" width="38" height="38">
-              <span><small>CAMINO PLANNER</small><strong>My Camino</strong></span>
-              <span class="phone-avatar" aria-hidden="true">A</span>
-            </div>
-            <div class="phone-map">
-              <svg viewBox="0 0 320 310" role="img" aria-label="A winding Camino route with five stages">
-                <defs>
-                  <filter id="route-shadow" x="-30%" y="-30%" width="160%" height="160%">
-                    <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#0b3b31" flood-opacity=".18"/>
-                  </filter>
-                </defs>
-                <g class="map-lines" fill="none" stroke="#647A59" stroke-opacity=".25">
-                  <path d="M-12 56 C74 18 103 102 184 60 S290 30 344 76"/>
-                  <path d="M-16 147 C49 106 90 178 154 134 S254 86 341 150"/>
-                  <path d="M-8 235 C57 192 115 252 180 218 S276 192 338 226"/>
-                </g>
-                <path class="route-halo" d="M42 260 C72 228 47 197 88 179 S160 178 162 133 S214 104 205 70 S245 40 274 27" fill="none"/>
-                <path class="route-line" d="M42 260 C72 228 47 197 88 179 S160 178 162 133 S214 104 205 70 S245 40 274 27" fill="none" filter="url(#route-shadow)"/>
-                <g class="route-stops">
-                  <circle cx="42" cy="260" r="8"/><circle cx="87" cy="180" r="6"/><circle cx="162" cy="133" r="6"/><circle cx="206" cy="70" r="6"/><circle cx="274" cy="27" r="9"/>
-                </g>
-                <g class="map-labels">
-                  <text x="24" y="286">Sarria</text>
-                  <text x="218" y="22">Santiago</text>
-                </g>
-              </svg>
-              <div class="map-pill"><span aria-hidden="true">⌖</span> Camino Francés</div>
-            </div>
-            <div class="today-card">
-              <div>
-                <span class="overline">TODAY · DAY 3</span>
-                <strong>Palas de Rei → Arzúa</strong>
+            <div class="ios-navigation"><span></span><strong></strong><span class="refresh-icon" aria-hidden="true">↻</span></div>
+            <div class="app-scroll">
+              <div class="app-brand-lockup">
+                <img src="assets/long-slow-travel-mark.png" alt="" width="48" height="48">
+                <span><strong>LONG SLOW TRAVEL</strong><small>JOURNEYS WORTH TAKING</small><b><i aria-hidden="true">◒</i> CAMINO</b></span>
               </div>
-              <div class="distance"><strong>28.8</strong><small>km</small></div>
-              <div class="elevation" aria-hidden="true">
-                <svg viewBox="0 0 260 42" preserveAspectRatio="none"><path d="M0 37 L18 30 L35 32 L58 15 L75 25 L96 21 L114 6 L138 22 L157 17 L179 31 L198 23 L218 28 L240 13 L260 20 L260 42 L0 42 Z"/></svg>
+              <div class="app-divider"></div>
+              <div class="app-hierarchy-header">
+                <i></i>
+                <span><small><b aria-hidden="true">◎</b> EXPLORE</small><strong>Journeys</strong></span>
               </div>
-              <div class="stage-meta"><span>↗ 510 m</span><span>About 7 hr</span><span>12 places</span></div>
+              <p class="app-intro">Choose a route. Make it yours. Keep it offline.</p>
+              <div class="app-status-row">
+                <span class="app-chip success"><b aria-hidden="true">✓</b> Offline ready</span>
+                <span class="app-chip ochre"><b aria-hidden="true">●</b> Walk or ride</span>
+              </div>
+              <div class="app-list-header"><span aria-hidden="true">◆</span> AVAILABLE JOURNEYS <i></i></div>
+              <div class="app-elevated-card journey-app-card">
+                <div class="app-card-heading">
+                  <span class="app-circle-icon" aria-hidden="true">◒</span>
+                  <span><strong>Camino de Santiago</strong><small>Camino routes and pilgrimage planning</small></span>
+                  <b aria-hidden="true">›</b>
+                </div>
+                <div class="app-status-row">
+                  <span class="app-chip sage"><b aria-hidden="true">●</b> Walking</span>
+                </div>
+              </div>
+            </div>
+            <div class="app-tab-bar" aria-hidden="true">
+              <span class="active"><b>◆</b>Journeys</span><span><b>▣</b>Schedules</span><span><b>⇩</b>Content</span><span><b>●</b>Account</span>
             </div>
           </div>
 
-          <div class="floating-card floating-top"><span class="float-icon">⌁</span><span><small>ROUTE READY</small><strong>Available offline</strong></span></div>
-          <div class="floating-card floating-bottom"><span class="float-icon gold">☀</span><span><small>NEXT STOP</small><strong>Melide · 6.2 km</strong></span></div>
+          <div class="floating-card floating-top"><span class="float-icon">◆</span><span><small>REAL APP FLOW</small><strong>Journeys → Routes</strong></span></div>
+          <div class="floating-card floating-bottom"><span class="float-icon gold">⇩</span><span><small>OFFLINE CONTENT</small><strong>Install before walking</strong></span></div>
         </div>
       </div>
     </section>
@@ -128,9 +119,9 @@
             <h3>Stages that fit your journey</h3>
             <p>Start with a suggested itinerary, then split long days, add rest days, adjust dates, and make the Camino yours.</p>
             <div class="mini-stage-list" aria-hidden="true">
-              <div><span>01</span><strong>Sarria</strong><i></i><b>22.1 km</b></div>
-              <div><span>02</span><strong>Portomarín</strong><i></i><b>24.8 km</b></div>
-              <div><span>03</span><strong>Palas de Rei</strong><i></i><b>28.8 km</b></div>
+              <div><span>1</span><strong>Day 1<small>Sarria → Portomarín</small></strong><i></i><b>22.3 km</b></div>
+              <div><span>2</span><strong>Day 2<small>Portomarín → Palas de Rei</small></strong><i></i><b>25.0 km</b></div>
+              <div><span>3</span><strong>Day 3<small>Palas de Rei → Arzúa</small></strong><i></i><b>28.5 km</b></div>
             </div>
           </article>
 
@@ -166,20 +157,37 @@
           </ul>
         </div>
 
-        <div class="route-window" aria-label="A sample list of places and services along a Camino stage">
-          <div class="window-top"><span><i></i><i></i><i></i></span><small>DAY 3 · PALAS DE REI TO ARZÚA</small><b>•••</b></div>
-          <div class="window-map">
-            <svg viewBox="0 0 520 180" aria-hidden="true">
-              <path d="M-20 127 C80 36 126 151 204 82 S344 131 407 55 S486 92 548 30" fill="none" stroke="#d99a1c" stroke-width="9" stroke-linecap="round"/>
-              <g fill="#fffdf8" stroke="#0b3b31" stroke-width="5"><circle cx="70" cy="83" r="9"/><circle cx="204" cy="82" r="9"/><circle cx="407" cy="55" r="9"/></g>
-            </svg>
+        <div class="route-window app-screen day-detail-screen" aria-label="A source-matched preview of the Camino Planner Day 3 map screen">
+          <div class="phone-bar"><span>9:41</span><span>● ◒ ▰</span></div>
+          <div class="ios-navigation detail-navigation"><span aria-hidden="true">‹ Schedules</span><strong>Day 3</strong><span></span></div>
+          <div class="day-app-scroll">
+            <div class="app-day-header">
+              <span class="app-day-badge">3</span>
+              <span><strong>Day 3</strong><small>Palas de Rei → Arzúa</small></span>
+            </div>
+            <div class="app-status-row day-status-row">
+              <span class="app-chip sage"><b aria-hidden="true">●</b> 28.5 km</span>
+            </div>
+            <div class="app-segmented" aria-hidden="true"><span>Places</span><span class="active">Map</span><span>Elevation</span></div>
+            <div class="app-list-header"><span aria-hidden="true">◆</span> MAP <i></i></div>
+            <div class="app-map-card">
+              <div class="app-map-card-heading"><strong><span aria-hidden="true">◆</span> Day 3 map</strong><small>Full-resolution GPX route section; applicable alternatives are shown in blue.</small></div>
+              <div class="window-map">
+                <svg viewBox="0 0 520 210" role="img" aria-label="Red route line with start, town, and end pins">
+                  <g fill="none" stroke="#647a59" stroke-opacity=".22" stroke-width="2">
+                    <path d="M-10 48 C80 9 130 92 218 45 S404 71 548 18"/><path d="M-20 157 C84 105 133 191 229 131 S397 169 546 103"/>
+                  </g>
+                  <path d="M-20 167 C68 69 122 172 204 105 S340 146 407 63 S487 98 548 29" fill="none" stroke="#fffdf8" stroke-width="14" stroke-linecap="round"/>
+                  <path d="M-20 167 C68 69 122 172 204 105 S340 146 407 63 S487 98 548 29" fill="none" stroke="#d43d32" stroke-width="7" stroke-linecap="round"/>
+                  <g fill="#fffdf8" stroke-width="5"><circle cx="59" cy="104" r="10" stroke="#647a59"/><circle cx="204" cy="105" r="8" stroke="#d99a1c"/><circle cx="407" cy="63" r="10" stroke="#c65a24"/></g>
+                </svg>
+              </div>
+              <div class="app-map-legend" aria-hidden="true"><span class="start">● Start</span><span class="route">― Camino</span><span class="today">● Today</span><span class="towns">● Towns</span><span class="end">● End</span></div>
+              <div class="app-map-summary"><span><b aria-hidden="true">⌁</b> 28.5 km</span></div>
+              <p class="app-map-note">Route data: © OpenStreetMap contributors · Waymarked Trails.</p>
+            </div>
           </div>
-          <div class="place-list">
-            <div class="place-row"><span class="place-dot start"></span><div><small>START</small><strong>Palas de Rei</strong></div><span class="services">☕ ◈ ⛲</span><b>0 km</b></div>
-            <div class="place-row"><span class="place-dot"></span><div><small>VILLAGE</small><strong>Melide</strong></div><span class="services">☕ ◈ ⛲ 🛏</span><b>14.5 km</b></div>
-            <div class="place-row"><span class="place-dot"></span><div><small>VILLAGE</small><strong>Ribadiso</strong></div><span class="services">☕ ⛲ 🛏</span><b>25.6 km</b></div>
-            <div class="place-row"><span class="place-dot finish"></span><div><small>FINISH</small><strong>Arzúa</strong></div><span class="services">☕ ◈ ⛲ 🛏</span><b>28.8 km</b></div>
-          </div>
+          <div class="app-tab-bar" aria-hidden="true"><span><b>◆</b>Journeys</span><span class="active"><b>▣</b>Schedules</span><span><b>⇩</b>Content</span><span><b>●</b>Account</span></div>
         </div>
       </div>
     </section>
