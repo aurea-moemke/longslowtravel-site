@@ -32,25 +32,35 @@ After merging to `main`, open the repository's **Settings → Pages** and choose
 - **Branch:** `main`
 - **Folder:** `/ (root)`
 
-The expected public URLs are:
-
-- Landing: `https://aurea-moemke.github.io/longslowtravel-site/`
-- Support: `https://aurea-moemke.github.io/longslowtravel-site/support/`
-- Privacy: `https://aurea-moemke.github.io/longslowtravel-site/privacy/`
-
-Use the Support and Privacy URLs in App Store Connect unless a custom domain is
-configured later.
-
-The intended production URLs are:
+The production URLs are:
 
 - Landing: `https://longslowtravel.com/`
 - Support: `https://longslowtravel.com/support/`
 - Privacy: `https://longslowtravel.com/privacy/`
 - Imprint: `https://longslowtravel.com/imprint/`
 
-Add the GitHub Pages `CNAME` file and registrar DNS records together during the
-custom-domain cutover. Do not change Proton MX records or the Brevo
-authentication records when adding the website records.
+Use these Support and Privacy URLs in App Store Connect.
+
+## Custom domain
+
+The root-level `CNAME` file declares `longslowtravel.com` as the GitHub Pages
+domain. In **Settings → Pages**, set **Custom domain** to
+`longslowtravel.com`. At the DNS provider, use these website records:
+
+| Type | Host | Value |
+| --- | --- | --- |
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `aurea-moemke.github.io` |
+
+Do not add the repository name to the `www` CNAME target. After GitHub finishes
+issuing the certificate, enable **Enforce HTTPS** in the Pages settings.
+
+These website records can coexist with the `api` CNAME, Proton MX records, and
+Proton/Brevo verification or authentication TXT/CNAME records. Do not replace
+those email or API records during the website cutover.
 
 ## Before public release
 
