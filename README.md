@@ -9,6 +9,7 @@ The static GitHub Pages site for **Long Slow Travel** and its first app,
 - `/support/` — public support, troubleshooting, and account-deletion guidance
 - `/privacy/` — privacy policy aligned with the app's current TestFlight privacy
   manifest and production behavior
+- `/imprint/` — German provider identification for the independent operator
 
 The site is plain HTML, CSS, and JavaScript. It has no build step, external font
 request, analytics script, or cookie dependency.
@@ -39,6 +40,17 @@ The expected public URLs are:
 
 Use the Support and Privacy URLs in App Store Connect unless a custom domain is
 configured later.
+
+The intended production URLs are:
+
+- Landing: `https://longslowtravel.com/`
+- Support: `https://longslowtravel.com/support/`
+- Privacy: `https://longslowtravel.com/privacy/`
+- Imprint: `https://longslowtravel.com/imprint/`
+
+Add the GitHub Pages `CNAME` file and registrar DNS records together during the
+custom-domain cutover. Do not change Proton MX records or the Brevo
+authentication records when adding the website records.
 
 ## Before public release
 
