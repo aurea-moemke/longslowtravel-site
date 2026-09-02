@@ -3,6 +3,10 @@
 The static GitHub Pages site for **Long Slow Travel** and its first app,
 **Camino Planner**.
 
+AI-assisted work must begin with the canonical cross-repository
+[README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
+in the backend repository.
+
 ## Pages
 
 - `/` — branded Camino Planner landing page
