@@ -1,7 +1,12 @@
 # Long Slow Travel site
 
-The static GitHub Pages site for **Long Slow Travel** and its first app,
-**Camino Planner**.
+The static GitHub Pages site for publisher and product-family brand
+**Long Slow Travel** and its first app, **LST Camino Planner**. The installed
+iOS home-screen name is **LST Camino**.
+
+AI-assisted work must begin with the canonical cross-repository
+[README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
+in the backend repository.
 
 AI-assisted work must begin with the canonical cross-repository
 [README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
@@ -9,7 +14,7 @@ in the backend repository.
 
 ## Pages
 
-- `/` — branded Camino Planner landing page
+- `/` — branded LST Camino Planner landing page
 - `/support/` — public support, troubleshooting, and account-deletion guidance
 - `/privacy/` — privacy policy aligned with the app's current TestFlight privacy
   manifest and production behavior
@@ -27,6 +32,14 @@ python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000/`.
+
+## Tests
+
+Run the public-identity regression checks from the repository root:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
 
 ## Publish with GitHub Pages
 
