@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main-content">Skip to content</a>
 
   <header class="site-header">
@@ -67,7 +67,7 @@
           <div class="contour contour-two" aria-hidden="true"></div>
 
           <figure class="journeys-capture">
-            <img src="assets/camino-planner-journeys.png" alt="LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys" width="572" height="1242">
+            <span class="screen-frame"><img src="assets/lst-camino-journeys.png" alt="LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys" width="419" height="909"></span>
             <figcaption>Actual LST Camino Planner Journeys screen</figcaption>
           </figure>
         </div>
@@ -88,11 +88,6 @@
             <p class="card-kicker">Plan your way</p>
             <h3>Stages that fit your journey</h3>
             <p>Start with a suggested itinerary, then split long days, add rest days, adjust dates, and make the Camino yours.</p>
-            <div class="mini-stage-list" aria-hidden="true">
-              <div><span>1</span><strong>Day 1<small>Sarria → Portomarín</small></strong><i></i><b>22.3 km</b></div>
-              <div><span>2</span><strong>Day 2<small>Portomarín → Palas de Rei</small></strong><i></i><b>25.0 km</b></div>
-              <div><span>3</span><strong>Day 3<small>Palas de Rei → Arzúa</small></strong><i></i><b>28.5 km</b></div>
-            </div>
           </article>
 
           <article class="feature-card">
@@ -100,7 +95,6 @@
             <p class="card-kicker">Know the day ahead</p>
             <h3>Route and elevation together</h3>
             <p>See the walking line, distance, elevation, and the towns along the way before you shoulder your pack.</p>
-            <div class="profile-art" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
           </article>
 
           <article class="feature-card">
@@ -108,7 +102,6 @@
             <p class="card-kicker">Made for the trail</p>
             <h3>Useful without a signal</h3>
             <p>Installed route details and your schedules stay on your iPhone, ready for the stretches between reliable connections.</p>
-            <div class="offline-chip"><span aria-hidden="true">✓</span> Downloaded and ready</div>
           </article>
         </div>
       </div>
@@ -127,37 +120,41 @@
           </ul>
         </div>
 
-        <div class="route-window app-screen day-detail-screen" aria-label="A source-matched preview of the LST Camino Planner Day 3 map screen">
-          <div class="phone-bar"><span>9:41</span><span>● ◒ ▰</span></div>
-          <div class="ios-navigation detail-navigation"><span aria-hidden="true">‹ Schedules</span><strong>Day 3</strong><span></span></div>
-          <div class="day-app-scroll">
-            <div class="app-day-header">
-              <span class="app-day-badge">3</span>
-              <span><strong>Day 3</strong><small>Palas de Rei → Arzúa</small></span>
-            </div>
-            <div class="app-status-row day-status-row">
-              <span class="app-chip sage"><b aria-hidden="true">●</b> 28.5 km</span>
-            </div>
-            <div class="app-segmented" aria-hidden="true"><span>Places</span><span class="active">Map</span><span>Elevation</span></div>
-            <div class="app-list-header"><span aria-hidden="true">◆</span> MAP <i></i></div>
-            <div class="app-map-card">
-              <div class="app-map-card-heading"><strong><span aria-hidden="true">◆</span> Day 3 map</strong><small>Full-resolution GPX route section; applicable alternatives are shown in blue.</small></div>
-              <div class="window-map">
-                <svg viewBox="0 0 520 210" role="img" aria-label="Red route line with start, town, and end pins">
-                  <g fill="none" stroke="#647a59" stroke-opacity=".22" stroke-width="2">
-                    <path d="M-10 48 C80 9 130 92 218 45 S404 71 548 18"/><path d="M-20 157 C84 105 133 191 229 131 S397 169 546 103"/>
-                  </g>
-                  <path d="M-20 167 C68 69 122 172 204 105 S340 146 407 63 S487 98 548 29" fill="none" stroke="#fffdf8" stroke-width="14" stroke-linecap="round"/>
-                  <path d="M-20 167 C68 69 122 172 204 105 S340 146 407 63 S487 98 548 29" fill="none" stroke="#d43d32" stroke-width="7" stroke-linecap="round"/>
-                  <g fill="#fffdf8" stroke-width="5"><circle cx="59" cy="104" r="10" stroke="#647a59"/><circle cx="204" cy="105" r="8" stroke="#d99a1c"/><circle cx="407" cy="63" r="10" stroke="#c65a24"/></g>
-                </svg>
-              </div>
-              <div class="app-map-legend" aria-hidden="true"><span class="start">● Start</span><span class="route">― Camino</span><span class="today">● Today</span><span class="towns">● Towns</span><span class="end">● End</span></div>
-              <div class="app-map-summary"><span><b aria-hidden="true">⌁</b> 28.5 km</span></div>
-              <p class="app-map-note">Route data: © OpenStreetMap contributors · Waymarked Trails.</p>
-            </div>
-          </div>
-          <div class="app-tab-bar" aria-hidden="true"><span><b>◆</b>Journeys</span><span class="active"><b>▣</b>Schedules</span><span><b>⇩</b>Content</span><span><b>●</b>Account</span></div>
+        <figure class="route-capture">
+          <span class="screen-frame"><img src="assets/lst-camino-itinerary-map.png" alt="LST Camino Planner full itinerary map screen" width="406" height="881"></span>
+          <figcaption>Full itinerary map</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section screen-showcase">
+      <div class="shell">
+        <div class="section-heading centered">
+          <div class="eyebrow">Inside the planner</div>
+          <h2>See the journey<br><em>take shape.</em></h2>
+          <p>Review your itinerary day by day, then explore the elevation profile before you leave.</p>
+        </div>
+        <div class="screen-grid">
+          <figure class="screen-shot">
+            <span class="screen-frame"><img src="assets/lst-camino-routes.png" alt="LST Camino Planner Routes screen showing Camino Francés, Finisterre, and Português route packs" width="500" height="1087"></span>
+            <figcaption>Available routes</figcaption>
+          </figure>
+          <figure class="screen-shot">
+            <span class="screen-frame"><img src="assets/lst-camino-template-create.png" alt="LST Camino Planner itinerary template screen with schedule creation" width="405" height="872"></span>
+            <figcaption>Create from a template</figcaption>
+          </figure>
+          <figure class="screen-shot">
+            <span class="screen-frame"><img src="assets/lst-camino-itinerary-days-current.png" alt="LST Camino Planner itinerary days screen" width="502" height="1086"></span>
+            <figcaption>Itinerary days</figcaption>
+          </figure>
+          <figure class="screen-shot">
+            <span class="screen-frame"><img src="assets/lst-camino-elevation-profile-current.png" alt="LST Camino Planner elevation profile screen" width="506" height="1092"></span>
+            <figcaption>Elevation profile</figcaption>
+          </figure>
+          <figure class="screen-shot">
+            <span class="screen-frame"><img src="assets/lst-camino-my-schedule.png" alt="LST Camino Planner personal schedule screen" width="504" height="1094"></span>
+            <figcaption>Your personal schedule</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -178,8 +175,40 @@
             <div class="journey-number">01</div><div class="journey-body"><span class="status-badge muted">ROUTE PACK</span><h3>Camino Francés</h3><p>The classic journey west across northern Spain, ready to shape around your own pace.</p><div class="journey-meta"><span>One-time purchase</span></div></div>
           </article>
           <article class="journey-card">
-            <div class="journey-number alt">02</div><div class="journey-body"><span class="status-badge muted">GROWING LIBRARY</span><h3>More ways to Santiago</h3><p>Portuguese routes, Finisterre, and future journeys belong in the same thoughtful planner.</p><div class="journey-meta"><span>Independent route packs</span></div></div>
+            <div class="journey-number sea">02</div><div class="journey-body"><span class="status-badge muted">ROUTE PACK</span><h3>Camino Finisterre</h3><p>Continue west from Santiago to the Atlantic coast, with itineraries for Finisterre, Muxía, or both.</p><div class="journey-meta"><span>One-time purchase</span></div></div>
           </article>
+          <article class="journey-card portugues-card">
+            <div class="journey-number alt">03</div>
+            <div class="journey-body">
+              <span class="status-badge muted">ROUTE PACK</span>
+              <h3>Camino Português</h3>
+              <p>One route pack with two complete ways from Porto to Santiago.</p>
+              <div class="route-pack-options">
+                <div>
+                  <span class="route-branch-icon central" aria-hidden="true">⌁</span>
+                  <div><strong>Central Route</strong><p>Walk north from Porto through historic inland towns to Santiago de Compostela.</p></div>
+                </div>
+                <div>
+                  <span class="route-branch-icon coastal" aria-hidden="true">≈</span>
+                  <div><strong>Coastal Route</strong><p>Follow the Atlantic from Porto, with route options that reconnect with the Central Way toward Santiago.</p></div>
+                </div>
+              </div>
+              <div class="journey-meta"><span>One-time purchase</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="developer-story">
+      <div class="shell">
+        <div class="developer-story-card">
+          <img class="developer-story-icon" src="assets/camino-pilgrim-icon.png" alt="Camino Pilgrim app icon" width="144" height="144">
+          <div>
+            <div class="eyebrow">From the developer</div>
+            <h2>Built on eleven years of Camino app experience.</h2>
+            <p>Built by Aurea Moemke, creator of Camino Pilgrim—the free Android Camino companion available from 2014 to 2025.</p>
+          </div>
         </div>
       </div>
     </section>

@@ -8,10 +8,6 @@ AI-assisted work must begin with the canonical cross-repository
 [README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
 in the backend repository.
 
-AI-assisted work must begin with the canonical cross-repository
-[README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
-in the backend repository.
-
 ## Pages
 
 - `/` — branded LST Camino Planner landing page
@@ -22,6 +18,32 @@ in the backend repository.
 
 The site is plain HTML, CSS, and JavaScript. It has no build step, external font
 request, analytics script, or cookie dependency.
+
+The landing page uses seven current, real iOS screenshots for Journeys, the
+available Routes list, template creation, the full itinerary map, itinerary
+days, the elevation profile, and a created personal schedule. Together they
+show the actual route-selection and template-to-schedule flow. Keep those
+checked-in assets synchronized with the public app UI when screenshots are
+refreshed.
+The screenshot frames crop the simulator's outer black edge without modifying
+the source PNG files and keep every screenshot level rather than tilted. The
+feature cards intentionally use brand color, type, and abstract decoration
+instead of hand-built app-screen illustrations.
+
+The route library follows the purchase model: Camino Francés, Camino
+Finisterre, and Camino Português are the three paid route packs. The single
+Português card explains its included Central and Coastal walking routes rather
+than presenting them as separate purchases.
+
+The developer-history card uses the original Camino Pilgrim app icon supplied
+by its developer rather than a generated monogram.
+
+The landing and support pages are available in English, German, Spanish,
+French, Italian, and Portuguese. The visitor can choose a language in the site
+navigation; otherwise the site follows the saved choice or browser preference.
+English is the fallback. The privacy policy remains authoritative in English,
+and the provider imprint remains authoritative in German; the site makes that
+clear when another interface language is active.
 
 ## Preview locally
 
