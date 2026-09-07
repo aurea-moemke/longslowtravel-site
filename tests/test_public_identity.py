@@ -3,6 +3,7 @@ import re
 import unittest
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,6 +20,7 @@ class TextCollector(HTMLParser):
     def __init__(self):
         super().__init__()
         self.text = []
+        self.resources = []
 
     def handle_data(self, data):
         value = data.strip()
@@ -27,11 +29,33 @@ class TextCollector(HTMLParser):
 
     def handle_starttag(self, _tag, attributes):
         for name, value in attributes:
+            if name in {"href", "src"} and value:
+                self.resources.append(value)
             if name in {"aria-label", "alt", "title", "placeholder"} and value:
                 self.text.append(value)
 
 
 class PublicIdentityTests(unittest.TestCase):
+    def test_local_page_links_assets_and_fragments_resolve(self):
+        for page in PUBLIC_PAGES:
+            collector = TextCollector()
+            collector.feed(page.read_text(encoding="utf-8"))
+            for resource in collector.resources:
+                url = urlsplit(resource)
+                if url.scheme or url.netloc:
+                    continue
+                with self.subTest(page=page.name, resource=resource):
+                    base = ROOT if url.path.startswith("/") else page.parent
+                    target = (base / unquote(url.path).lstrip("/")).resolve() if url.path else page
+                    if target.is_dir():
+                        target /= "index.html"
+                    self.assertTrue(target.is_file(), str(target))
+                    if url.fragment and target.suffix == ".html":
+                        self.assertIn(
+                            f'id="{unquote(url.fragment)}"',
+                            target.read_text(encoding="utf-8"),
+                        )
+
     def test_public_pages_use_the_canonical_product_and_publisher_names(self):
         for path in PUBLIC_PAGES:
             with self.subTest(path=path.relative_to(ROOT)):
@@ -47,6 +71,92 @@ class PublicIdentityTests(unittest.TestCase):
 
         self.assertIn("Location Services → LST Camino", support)
         self.assertIn("change LST Camino’s location permission", privacy)
+
+    def test_release_guidance_is_present_and_translated(self):
+        catalog = json.loads((ROOT / "translations.json").read_text(encoding="utf-8"))
+        offline = (
+            "Installed route content and schedules stay on your iPhone for offline use. "
+            "Basemap tiles need a separate download in Trail Mode. "
+            "Test both in airplane mode before departure."
+        )
+        required = {
+            "home": [offline, "Begin with a curated itinerary or shape your own."],
+            "support": [
+                offline,
+                "Trail Mode shows your location only while the app is open. "
+                "It does not provide background tracking or emergency monitoring.",
+                "Account → Settings → Delete Account",
+                "Your installed route content and schedules remain available offline. "
+                "Basemap tiles are separate: open a day’s map, enter Trail Mode, choose "
+                "Download, and wait for “Offline map ready for this stage”. "
+                "Repeat for each stage you need.",
+                "Before departure, turn on airplane mode and turn off Wi-Fi, then check "
+                "your routes, schedules, and downloaded stage maps. Downloads cover the "
+                "selected stage area, not every map area or zoom level. Sign-in, "
+                "purchases, restoration, and sync require an internet connection.",
+            ],
+        }
+        for page, strings in required.items():
+            path = ROOT / ("index.html" if page == "home" else "support/index.html")
+            collector = TextCollector()
+            collector.feed(path.read_text(encoding="utf-8"))
+            for source in strings:
+                with self.subTest(page=page, source=source):
+                    self.assertIn(source, collector.text)
+                    for language in SUPPORTED_LANGUAGES[1:]:
+                        self.assertTrue(catalog["pages"][page][language].get(source))
+
+        for language in SUPPORTED_LANGUAGES[1:]:
+            instructions = catalog["pages"]["support"][language]
+            settings_key = next(key for key in instructions if key.startswith("In iPhone Settings,"))
+            self.assertIn("LST Camino", instructions[settings_key])
+            self.assertNotIn("LST Camino Planner", instructions[settings_key])
+
+    def test_planning_aid_warning_is_preserved_in_every_language(self):
+        support = (ROOT / "support/index.html").read_text(encoding="utf-8")
+        source = (
+            "LST Camino Planner is a planning aid, not an emergency or navigation service. "
+            "For urgent help, contact local emergency services. In Spain and across the EU, call"
+        )
+        catalog = json.loads((ROOT / "translations.json").read_text(encoding="utf-8"))
+        self.assertIn(source, support)
+        self.assertIn('href="tel:112">112</a>', support)
+        for language in SUPPORTED_LANGUAGES[1:]:
+            self.assertTrue(catalog["pages"]["support"][language].get(source))
+
+    def test_privacy_matches_current_deployed_features(self):
+        privacy = (ROOT / "privacy/index.html").read_text(encoding="utf-8")
+        self.assertIn("Hosts the production account API", privacy)
+        self.assertIn("information is stored", privacy)
+        self.assertNotIn("Will host", privacy)
+        self.assertNotIn("When production account services are enabled", privacy)
+        self.assertNotIn("will be stored", privacy)
+        self.assertIn("accommodations you mark as favourites", privacy)
+        self.assertIn("lst-site-language", privacy)
+        self.assertIn("clear this website’s data", privacy)
+        self.assertIn("Account → Settings → Delete Account", privacy)
+        self.assertIn("Trail Mode shows your location only while the app is open", privacy)
+        self.assertIn("Bavarian State Office for Data Protection Supervision", privacy)
+
+    def test_marketing_does_not_claim_proven_routes_or_no_telemetry(self):
+        home = (ROOT / "index.html").read_text(encoding="utf-8")
+        privacy = (ROOT / "privacy/index.html").read_text(encoding="utf-8")
+        catalog = (ROOT / "translations.json").read_text(encoding="utf-8")
+        self.assertNotIn("proven stage pattern", home + catalog)
+        self.assertNotIn("No ads or tracking", home + catalog)
+        self.assertNotIn("<b>No tracking</b>", privacy)
+        self.assertIn("Mapbox", privacy)
+        self.assertIn("telemetry", privacy)
+
+    def test_legal_content_keeps_its_actual_language(self):
+        for page, language in (("privacy", "en"), ("imprint", "de")):
+            source = (ROOT / page / "index.html").read_text(encoding="utf-8")
+            self.assertEqual(source.count(f'data-no-translate lang="{language}"'), 2)
+        script = (ROOT / "script.js").read_text(encoding="utf-8")
+        self.assertGreater(
+            script.index("document.documentElement.lang = language"),
+            script.index("const catalog = await response.json()"),
+        )
 
     def test_multilingual_catalog_is_complete_for_public_content(self):
         catalog = json.loads((ROOT / "translations.json").read_text(encoding="utf-8"))
