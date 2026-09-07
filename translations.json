@@ -11,43 +11,43 @@
     "en": {
       "languageLabel": "Language",
       "legalNotices": {
-        "privacy": "The privacy policy is authoritative in English.",
-        "imprint": "The legally authoritative provider information remains in German."
+        "privacy": "This privacy policy is currently available in English.",
+        "imprint": "The provider information is currently available in German."
       }
     },
     "de": {
       "languageLabel": "Sprache",
       "legalNotices": {
-        "privacy": "Die Datenschutzerklärung ist derzeit nur in englischer Sprache rechtsverbindlich verfügbar.",
-        "imprint": "Die rechtlich verbindlichen Anbieterinformationen sind auf Deutsch verfasst."
+        "privacy": "Diese Datenschutzerklärung ist derzeit auf Englisch verfügbar.",
+        "imprint": "Die Anbieterinformationen sind derzeit auf Deutsch verfügbar."
       }
     },
     "es": {
       "languageLabel": "Idioma",
       "legalNotices": {
-        "privacy": "La versión legalmente válida de la política de privacidad está disponible en inglés.",
-        "imprint": "La información legalmente válida del proveedor permanece en alemán."
+        "privacy": "Esta política de privacidad está disponible actualmente en inglés.",
+        "imprint": "La información del proveedor está disponible actualmente en alemán."
       }
     },
     "fr": {
       "languageLabel": "Langue",
       "legalNotices": {
-        "privacy": "La version juridiquement valable de la politique de confidentialité est disponible en anglais.",
-        "imprint": "Les mentions légales faisant foi restent rédigées en allemand."
+        "privacy": "Cette politique de confidentialité est actuellement disponible en anglais.",
+        "imprint": "Les informations sur le prestataire sont actuellement disponibles en allemand."
       }
     },
     "it": {
       "languageLabel": "Lingua",
       "legalNotices": {
-        "privacy": "La versione legalmente valida dell’informativa sulla privacy è disponibile in inglese.",
-        "imprint": "Le informazioni sul fornitore legalmente vincolanti restano in tedesco."
+        "privacy": "Questa informativa sulla privacy è attualmente disponibile in inglese.",
+        "imprint": "Le informazioni sul fornitore sono attualmente disponibili in tedesco."
       }
     },
     "pt": {
       "languageLabel": "Idioma",
       "legalNotices": {
-        "privacy": "A versão juridicamente vinculativa da política de privacidade está disponível em inglês.",
-        "imprint": "As informações juridicamente vinculativas do fornecedor permanecem em alemão."
+        "privacy": "Esta política de privacidade está atualmente disponível em inglês.",
+        "imprint": "As informações do prestador estão atualmente disponíveis em alemão."
       }
     }
   },
@@ -187,7 +187,7 @@
         "Get support": "Hilfe erhalten",
         "Free Sarria–Santiago sample": "Kostenlose Sarria–Santiago-Proberoute",
         "Built for offline days": "Für Offline-Tage gemacht",
-        "No ads or tracking": "Keine Werbung, kein Tracking",
+        "No advertising": "Keine Werbung",
         "App highlights": "App-Vorteile",
         "The actual LST Camino Planner Journeys screen": "Die echte Routenansicht des LST Camino Planner",
         "LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys": "Routenansicht des LST Camino Planner mit offline verfügbaren Wander- und Fahrradrouten des Camino de Santiago",
@@ -222,13 +222,13 @@
         "See the walking line, distance, elevation, and the towns along the way before you shoulder your pack.": "Sieh Wegverlauf, Entfernung, Höhenmeter und Orte entlang der Strecke, bevor du deinen Rucksack schulterst.",
         "Made for the trail": "Für unterwegs gemacht",
         "Useful without a signal": "Nützlich ohne Empfang",
-        "Installed route details and your schedules stay on your iPhone, ready for the stretches between reliable connections.": "Installierte Routendetails und deine Pläne bleiben auf deinem iPhone verfügbar – auch auf Abschnitten ohne zuverlässige Verbindung.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "Installierte Routeninhalte und Zeitpläne bleiben zur Offline-Nutzung auf deinem iPhone. Die Hintergrundkarte muss im Trail-Modus separat heruntergeladen werden. Teste beides vor der Abreise im Flugmodus.",
         "From first plan to final stamp": "Vom ersten Plan bis zum letzten Stempel",
         "One place for the": "Ein Ort für den",
         "whole walking day.": "ganzen Wandertag.",
         "Move from the big picture to the details you need at the next turn—without turning the Camino into a spreadsheet.": "Wechsle vom Überblick zu den Details für die nächste Abzweigung – ohne den Camino in eine Tabelle zu verwandeln.",
         "Choose a route and itinerary": "Route und Reiseplan wählen",
-        "Begin with a proven stage pattern or shape your own.": "Beginne mit einer bewährten Etappeneinteilung oder gestalte deine eigene.",
+        "Begin with a curated itinerary or shape your own.": "Beginne mit einer zusammengestellten Etappenplanung oder gestalte deine eigene.",
         "See what each day holds": "Sieh, was jeder Tag bringt",
         "Review terrain, services, places, and route options.": "Prüfe Gelände, Services, Orte und Routenoptionen.",
         "Carry it offline": "Offline dabeihaben",
@@ -273,7 +273,7 @@
         "Get support": "Obtener ayuda",
         "Free Sarria–Santiago sample": "Muestra gratuita Sarria–Santiago",
         "Built for offline days": "Pensado para días sin conexión",
-        "No ads or tracking": "Sin anuncios ni seguimiento",
+        "No advertising": "Sin publicidad",
         "App highlights": "Funciones destacadas",
         "The actual LST Camino Planner Journeys screen": "La pantalla real de rutas de LST Camino Planner",
         "LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys": "Pantalla de rutas de LST Camino Planner con Caminos de Santiago a pie y en bicicleta disponibles sin conexión",
@@ -308,13 +308,13 @@
         "See the walking line, distance, elevation, and the towns along the way before you shoulder your pack.": "Consulta el trazado, la distancia, la elevación y los pueblos del camino antes de cargar la mochila.",
         "Made for the trail": "Hecho para el Camino",
         "Useful without a signal": "Útil sin cobertura",
-        "Installed route details and your schedules stay on your iPhone, ready for the stretches between reliable connections.": "Los detalles instalados de la ruta y tus planes permanecen en el iPhone, listos para los tramos sin buena conexión.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "El contenido de las rutas instaladas y los planes se guardan en tu iPhone para usarlos sin conexión. Los mapas base requieren una descarga aparte en el modo Sendero. Prueba ambas cosas en modo avión antes de salir.",
         "From first plan to final stamp": "Del primer plan al último sello",
         "One place for the": "Un solo lugar para",
         "whole walking day.": "todo el día de Camino.",
         "Move from the big picture to the details you need at the next turn—without turning the Camino into a spreadsheet.": "Pasa de la visión general a los detalles de la próxima curva sin convertir el Camino en una hoja de cálculo.",
         "Choose a route and itinerary": "Elige una ruta y un itinerario",
-        "Begin with a proven stage pattern or shape your own.": "Parte de una distribución de etapas probada o crea la tuya.",
+        "Begin with a curated itinerary or shape your own.": "Empieza con un itinerario seleccionado o diseña el tuyo.",
         "See what each day holds": "Descubre lo que trae cada día",
         "Review terrain, services, places, and route options.": "Consulta el terreno, los servicios, los lugares y las opciones de ruta.",
         "Carry it offline": "Llévalo sin conexión",
@@ -359,7 +359,7 @@
         "Get support": "Obtenir de l’aide",
         "Free Sarria–Santiago sample": "Exemple gratuit Sarria–Santiago",
         "Built for offline days": "Conçu pour les jours hors ligne",
-        "No ads or tracking": "Sans publicité ni suivi",
+        "No advertising": "Sans publicité",
         "App highlights": "Points forts de l’app",
         "The actual LST Camino Planner Journeys screen": "Le véritable écran des parcours de LST Camino Planner",
         "LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys": "Écran des parcours de LST Camino Planner montrant des chemins de Saint-Jacques à pied et à vélo disponibles hors ligne",
@@ -394,13 +394,13 @@
         "See the walking line, distance, elevation, and the towns along the way before you shoulder your pack.": "Consultez le tracé, la distance, le dénivelé et les localités avant de mettre votre sac sur le dos.",
         "Made for the trail": "Pensé pour le chemin",
         "Useful without a signal": "Utile sans réseau",
-        "Installed route details and your schedules stay on your iPhone, ready for the stretches between reliable connections.": "Les détails d’itinéraire installés et vos programmes restent sur votre iPhone, prêts pour les portions sans connexion fiable.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "Le contenu des itinéraires installés et vos plannings restent sur votre iPhone pour une utilisation hors ligne. Les fonds de carte nécessitent un téléchargement séparé dans le mode Sentier. Testez les deux en mode avion avant le départ.",
         "From first plan to final stamp": "Du premier plan au dernier tampon",
         "One place for the": "Un seul endroit pour",
         "whole walking day.": "toute la journée de marche.",
         "Move from the big picture to the details you need at the next turn—without turning the Camino into a spreadsheet.": "Passez de la vue d’ensemble aux détails du prochain virage, sans transformer le Camino en feuille de calcul.",
         "Choose a route and itinerary": "Choisissez un parcours et un itinéraire",
-        "Begin with a proven stage pattern or shape your own.": "Commencez par un découpage éprouvé ou créez le vôtre.",
+        "Begin with a curated itinerary or shape your own.": "Partez d’un itinéraire sélectionné ou composez le vôtre.",
         "See what each day holds": "Découvrez chaque journée",
         "Review terrain, services, places, and route options.": "Consultez le terrain, les services, les lieux et les variantes.",
         "Carry it offline": "Emportez-le hors ligne",
@@ -445,7 +445,7 @@
         "Get support": "Ricevi assistenza",
         "Free Sarria–Santiago sample": "Esempio gratuito Sarria–Santiago",
         "Built for offline days": "Pensato per i giorni offline",
-        "No ads or tracking": "Senza pubblicità né tracciamento",
+        "No advertising": "Senza pubblicità",
         "App highlights": "Funzioni principali",
         "The actual LST Camino Planner Journeys screen": "La schermata reale dei percorsi di LST Camino Planner",
         "LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys": "Schermata dei percorsi di LST Camino Planner con Cammini di Santiago a piedi e in bici disponibili offline",
@@ -480,13 +480,13 @@
         "See the walking line, distance, elevation, and the towns along the way before you shoulder your pack.": "Consulta il tracciato, la distanza, l’altimetria e i centri lungo il percorso prima di indossare lo zaino.",
         "Made for the trail": "Pensato per il cammino",
         "Useful without a signal": "Utile senza segnale",
-        "Installed route details and your schedules stay on your iPhone, ready for the stretches between reliable connections.": "I dettagli installati del percorso e i tuoi programmi restano sull’iPhone, pronti per i tratti senza connessione affidabile.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "I contenuti dei percorsi installati e i programmi restano sul tuo iPhone per l’uso offline. Le mappe di base richiedono un download separato in modalità Sentiero. Prova entrambi in modalità aereo prima di partire.",
         "From first plan to final stamp": "Dal primo piano all’ultimo timbro",
         "One place for the": "Un unico posto per",
         "whole walking day.": "l’intera giornata di cammino.",
         "Move from the big picture to the details you need at the next turn—without turning the Camino into a spreadsheet.": "Passa dalla visione d’insieme ai dettagli per la prossima svolta senza trasformare il Camino in un foglio di calcolo.",
         "Choose a route and itinerary": "Scegli un percorso e un itinerario",
-        "Begin with a proven stage pattern or shape your own.": "Parti da una suddivisione collaudata o crea la tua.",
+        "Begin with a curated itinerary or shape your own.": "Parti da un itinerario selezionato o crea il tuo.",
         "See what each day holds": "Scopri cosa offre ogni giornata",
         "Review terrain, services, places, and route options.": "Consulta terreno, servizi, luoghi e opzioni di percorso.",
         "Carry it offline": "Portalo con te offline",
@@ -531,7 +531,7 @@
         "Get support": "Obter suporte",
         "Free Sarria–Santiago sample": "Amostra gratuita Sarria–Santiago",
         "Built for offline days": "Pensado para dias offline",
-        "No ads or tracking": "Sem anúncios nem rastreio",
+        "No advertising": "Sem publicidade",
         "App highlights": "Destaques da aplicação",
         "The actual LST Camino Planner Journeys screen": "O ecrã real de percursos do LST Camino Planner",
         "LST Camino Planner Journeys screen showing offline-ready walking and cycling Camino de Santiago journeys": "Ecrã de percursos do LST Camino Planner com Caminhos de Santiago a pé e de bicicleta disponíveis offline",
@@ -566,13 +566,13 @@
         "See the walking line, distance, elevation, and the towns along the way before you shoulder your pack.": "Veja o traçado, a distância, a elevação e as localidades antes de colocar a mochila às costas.",
         "Made for the trail": "Feito para o Caminho",
         "Useful without a signal": "Útil sem sinal",
-        "Installed route details and your schedules stay on your iPhone, ready for the stretches between reliable connections.": "Os detalhes instalados do percurso e os seus planos ficam no iPhone, prontos para os troços sem ligação fiável.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "Os conteúdos dos percursos instalados e os planos ficam no teu iPhone para utilização offline. Os mapas de base precisam de uma descarga separada no modo Trilho. Testa ambos em modo de voo antes da partida.",
         "From first plan to final stamp": "Do primeiro plano ao último carimbo",
         "One place for the": "Um só lugar para",
         "whole walking day.": "todo o dia de caminhada.",
         "Move from the big picture to the details you need at the next turn—without turning the Camino into a spreadsheet.": "Passe da visão geral aos detalhes da próxima curva sem transformar o Caminho numa folha de cálculo.",
         "Choose a route and itinerary": "Escolha um percurso e itinerário",
-        "Begin with a proven stage pattern or shape your own.": "Comece por uma divisão de etapas comprovada ou crie a sua.",
+        "Begin with a curated itinerary or shape your own.": "Começa com um itinerário selecionado ou cria o teu.",
         "See what each day holds": "Veja o que cada dia oferece",
         "Review terrain, services, places, and route options.": "Consulte terreno, serviços, locais e opções de percurso.",
         "Carry it offline": "Leve-o consigo offline",
@@ -626,7 +626,7 @@
         "Quick answers": "Schnelle Antworten",
         "Start here.": "Hier anfangen.",
         "Offline access": "Offline-Zugriff",
-        "Open the route while connected and install its content before you leave reliable Wi-Fi. Installed routes and schedules remain useful without a connection.": "Öffne die Route bei bestehender Verbindung und installiere ihre Inhalte, bevor du zuverlässiges WLAN verlässt. Installierte Routen und Pläne bleiben auch ohne Verbindung nutzbar.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "Installierte Routeninhalte und Zeitpläne bleiben zur Offline-Nutzung auf deinem iPhone. Die Hintergrundkarte muss im Trail-Modus separat heruntergeladen werden. Teste beides vor der Abreise im Flugmodus.",
         "Location on the map": "Standort auf der Karte",
         "In iPhone Settings, open Privacy & Security → Location Services → LST Camino and allow location while using the app. The planner can still be used without location access.": "Öffne in den iPhone-Einstellungen Datenschutz & Sicherheit → Ortungsdienste → LST Camino und erlaube den Standortzugriff beim Verwenden der App. Der Planner funktioniert auch ohne Standortzugriff.",
         "Restore a route": "Route wiederherstellen",
@@ -640,16 +640,18 @@
         "Why is a purchased route not appearing?": "Warum wird eine gekaufte Route nicht angezeigt?",
         "Check that you are signed into both the Long Slow Travel account used for the purchase and the Apple Account that completed it. Open Content, refresh, then choose Restore Purchases. If it still does not appear, email support with the route name and any on-screen message. Never send your password or full purchase receipt.": "Prüfe, ob du sowohl mit dem beim Kauf verwendeten Long Slow Travel-Konto als auch mit dem Apple-Konto des Kaufs angemeldet bist. Öffne Inhalte, aktualisiere und wähle Käufe wiederherstellen. Falls die Route weiterhin fehlt, sende dem Support den Routennamen und die angezeigte Meldung. Sende niemals dein Passwort oder den vollständigen Kaufbeleg.",
         "Will my plan work in airplane mode?": "Funktioniert mein Plan im Flugmodus?",
-        "Yes, once the route content has been installed. Your schedules are stored locally. Download and open the route before departure, then test it briefly in airplane mode while you still have a connection available.": "Ja, sobald die Routeninhalte installiert sind. Deine Pläne werden lokal gespeichert. Lade und öffne die Route vor der Abreise und teste sie kurz im Flugmodus, solange noch eine Verbindung verfügbar ist.",
+        "Your installed route content and schedules remain available offline. Basemap tiles are separate: open a day’s map, enter Trail Mode, choose Download, and wait for “Offline map ready for this stage”. Repeat for each stage you need.": "Deine installierten Routeninhalte und Zeitpläne bleiben offline verfügbar. Die Hintergrundkarte wird separat heruntergeladen: Öffne die Karte eines Tages, wechsle in den Trail-Modus, wähle „Herunterladen“ und warte auf „Offline-Karte für diese Etappe ist bereit“. Wiederhole dies für jede benötigte Etappe.",
         "How do I opt out of Mapbox telemetry?": "Wie widerspreche ich der Mapbox-Telemetrie?",
-        "Open the attribution control shown on a map in LST Camino Planner. Mapbox provides the telemetry preference there. You can also deny location access in iPhone Settings; the planner’s route information remains available without showing your live position.": "Öffne die Quellenangabe auf einer Karte im LST Camino Planner. Dort stellt Mapbox die Telemetrie-Einstellung bereit. Du kannst den Standortzugriff auch in den iPhone-Einstellungen verweigern; die Routeninformationen bleiben ohne Anzeige deiner aktuellen Position verfügbar.",
+        "In LST Camino, open the Mapbox attribution (info) control on a map and change the telemetry preference there. The iPhone location permission is a separate control; denying it does not replace opting out of telemetry.": "Öffne in LST Camino auf einer Karte die Mapbox-Quellenangaben über die Info-Schaltfläche und ändere dort die Telemetrie-Einstellung. Die Standortberechtigung des iPhones ist eine separate Einstellung; sie zu verweigern ersetzt nicht das Deaktivieren der Telemetrie.",
         "How do I delete my account?": "Wie lösche ich mein Konto?",
         "In LST Camino Planner, open": "Öffne im LST Camino Planner",
-        "Account → Delete Account": "Konto → Konto löschen",
+        "Account → Settings → Delete Account": "Konto → Einstellungen → Konto löschen",
         ", enter your current password, and confirm the permanent deletion. This removes your server account, authentication token, synced schedules, profile, and route access associated with the account. Guest schedules stay on your device. App Store purchases remain with your Apple Account and may be restored after you create or sign in to an account again.": ", gib dein aktuelles Passwort ein und bestätige die dauerhafte Löschung. Dadurch werden dein Serverkonto, das Anmeldetoken, synchronisierte Pläne, dein Profil und die mit dem Konto verbundenen Routenzugriffe entfernt. Gastpläne bleiben auf deinem Gerät. App-Store-Käufe bleiben mit deinem Apple-Konto verbunden und können nach erneuter Kontoerstellung oder Anmeldung wiederhergestellt werden.",
         "If you cannot access the app, email support from the address associated with your account.": "Wenn du nicht auf die App zugreifen kannst, schreibe dem Support von der mit deinem Konto verbundenen E-Mail-Adresse.",
         "How do I report incorrect route or accommodation information?": "Wie melde ich falsche Routen- oder Unterkunftsinformationen?",
-        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Nutze für Unterkunftsdetails möglichst die Korrekturfunktion der App; sie bereitet die Identifikationsdaten vor. Sende bei einer Route oder einem Ort dem Support Route, Etappe, Ortsnamen und deinen Korrekturvorschlag."
+        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Nutze für Unterkunftsdetails möglichst die Korrekturfunktion der App; sie bereitet die Identifikationsdaten vor. Sende bei einer Route oder einem Ort dem Support Route, Etappe, Ortsnamen und deinen Korrekturvorschlag.",
+        "Before departure, turn on airplane mode and turn off Wi-Fi, then check your routes, schedules, and downloaded stage maps. Downloads cover the selected stage area, not every map area or zoom level. Sign-in, purchases, restoration, and sync require an internet connection.": "Aktiviere vor der Abreise den Flugmodus und schalte WLAN aus. Prüfe dann deine Routen, Zeitpläne und heruntergeladenen Etappenkarten. Downloads decken den Bereich der gewählten Etappe ab, nicht jede Kartenregion oder Zoomstufe. Anmeldung, Käufe, Wiederherstellung und Synchronisierung benötigen eine Internetverbindung.",
+        "Trail Mode shows your location only while the app is open. It does not provide background tracking or emergency monitoring.": "Der Trail-Modus zeigt deinen Standort nur an, während die App geöffnet ist. Er bietet keine Standortverfolgung im Hintergrund und keine Notfallüberwachung."
       },
       "es": {
         "LST Camino Planner support": "Ayuda de LST Camino Planner",
@@ -666,7 +668,7 @@
         "Quick answers": "Respuestas rápidas",
         "Start here.": "Empieza aquí.",
         "Offline access": "Acceso sin conexión",
-        "Open the route while connected and install its content before you leave reliable Wi-Fi. Installed routes and schedules remain useful without a connection.": "Abre la ruta con conexión e instala su contenido antes de dejar una red Wi-Fi fiable. Las rutas y los planes instalados siguen disponibles sin conexión.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "El contenido de las rutas instaladas y los planes se guardan en tu iPhone para usarlos sin conexión. Los mapas base requieren una descarga aparte en el modo Sendero. Prueba ambas cosas en modo avión antes de salir.",
         "Location on the map": "Ubicación en el mapa",
         "In iPhone Settings, open Privacy & Security → Location Services → LST Camino and allow location while using the app. The planner can still be used without location access.": "En Ajustes del iPhone, abre Privacidad y seguridad → Localización → LST Camino y permite la ubicación mientras usas la app. El planificador también funciona sin acceso a la ubicación.",
         "Restore a route": "Restaurar una ruta",
@@ -680,16 +682,18 @@
         "Why is a purchased route not appearing?": "¿Por qué no aparece una ruta comprada?",
         "Check that you are signed into both the Long Slow Travel account used for the purchase and the Apple Account that completed it. Open Content, refresh, then choose Restore Purchases. If it still does not appear, email support with the route name and any on-screen message. Never send your password or full purchase receipt.": "Comprueba que has iniciado sesión tanto en la cuenta de Long Slow Travel usada para la compra como en la cuenta de Apple que la completó. Abre Contenido, actualiza y elige Restaurar compras. Si aún no aparece, escribe a ayuda con el nombre de la ruta y cualquier mensaje mostrado. Nunca envíes tu contraseña ni el recibo completo.",
         "Will my plan work in airplane mode?": "¿Funcionará mi plan en modo avión?",
-        "Yes, once the route content has been installed. Your schedules are stored locally. Download and open the route before departure, then test it briefly in airplane mode while you still have a connection available.": "Sí, una vez instalado el contenido de la ruta. Tus planes se guardan localmente. Descarga y abre la ruta antes de salir y pruébala brevemente en modo avión mientras aún tengas conexión.",
+        "Your installed route content and schedules remain available offline. Basemap tiles are separate: open a day’s map, enter Trail Mode, choose Download, and wait for “Offline map ready for this stage”. Repeat for each stage you need.": "El contenido de tus rutas instaladas y tus planes siguen disponibles sin conexión. Los mapas base se descargan aparte: abre el mapa de un día, entra en el modo Sendero, elige «Descargar» y espera a que aparezca «Mapa sin conexión listo para esta etapa». Repite el proceso para cada etapa que necesites.",
         "How do I opt out of Mapbox telemetry?": "¿Cómo desactivo la telemetría de Mapbox?",
-        "Open the attribution control shown on a map in LST Camino Planner. Mapbox provides the telemetry preference there. You can also deny location access in iPhone Settings; the planner’s route information remains available without showing your live position.": "Abre el control de atribución de un mapa en LST Camino Planner. Allí encontrarás la preferencia de telemetría de Mapbox. También puedes denegar la ubicación en Ajustes del iPhone; la ruta seguirá disponible sin mostrar tu posición en directo.",
+        "In LST Camino, open the Mapbox attribution (info) control on a map and change the telemetry preference there. The iPhone location permission is a separate control; denying it does not replace opting out of telemetry.": "En LST Camino, abre el control de atribución (información) de Mapbox en un mapa y cambia allí la preferencia de telemetría. El permiso de ubicación del iPhone es un control aparte; denegarlo no sustituye desactivar la telemetría.",
         "How do I delete my account?": "¿Cómo elimino mi cuenta?",
         "In LST Camino Planner, open": "En LST Camino Planner, abre",
-        "Account → Delete Account": "Cuenta → Eliminar cuenta",
+        "Account → Settings → Delete Account": "Cuenta → Ajustes → Eliminar cuenta",
         ", enter your current password, and confirm the permanent deletion. This removes your server account, authentication token, synced schedules, profile, and route access associated with the account. Guest schedules stay on your device. App Store purchases remain with your Apple Account and may be restored after you create or sign in to an account again.": ", introduce tu contraseña actual y confirma la eliminación permanente. Se eliminarán tu cuenta del servidor, el token, los planes sincronizados, el perfil y el acceso a rutas asociado. Los planes de invitado permanecen en el dispositivo. Las compras del App Store siguen vinculadas a tu cuenta de Apple y se pueden restaurar tras crear una cuenta o iniciar sesión de nuevo.",
         "If you cannot access the app, email support from the address associated with your account.": "Si no puedes acceder a la app, escribe a ayuda desde la dirección asociada a tu cuenta.",
         "How do I report incorrect route or accommodation information?": "¿Cómo comunico datos incorrectos de una ruta o alojamiento?",
-        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Para los datos de alojamiento, usa la opción de corrección de la app cuando esté disponible; preparará los datos identificativos. Para una ruta o lugar, escribe a ayuda indicando la ruta, etapa, nombre del lugar y corrección propuesta."
+        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Para los datos de alojamiento, usa la opción de corrección de la app cuando esté disponible; preparará los datos identificativos. Para una ruta o lugar, escribe a ayuda indicando la ruta, etapa, nombre del lugar y corrección propuesta.",
+        "Before departure, turn on airplane mode and turn off Wi-Fi, then check your routes, schedules, and downloaded stage maps. Downloads cover the selected stage area, not every map area or zoom level. Sign-in, purchases, restoration, and sync require an internet connection.": "Antes de salir, activa el modo avión y desactiva el wifi; comprueba después tus rutas, planes y mapas de etapas descargados. Las descargas cubren la zona de la etapa seleccionada, no todas las zonas ni todos los niveles de zoom. Para iniciar sesión, comprar, restaurar compras y sincronizar necesitas conexión a internet.",
+        "Trail Mode shows your location only while the app is open. It does not provide background tracking or emergency monitoring.": "El modo Sendero muestra tu ubicación solo mientras la app está abierta. No ofrece seguimiento en segundo plano ni vigilancia de emergencias."
       },
       "fr": {
         "LST Camino Planner support": "Assistance LST Camino Planner",
@@ -706,7 +710,7 @@
         "Quick answers": "Réponses rapides",
         "Start here.": "Commencez ici.",
         "Offline access": "Accès hors ligne",
-        "Open the route while connected and install its content before you leave reliable Wi-Fi. Installed routes and schedules remain useful without a connection.": "Ouvrez le parcours lorsque vous êtes connecté et installez son contenu avant de quitter un Wi-Fi fiable. Les parcours et programmes installés restent utilisables sans connexion.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "Le contenu des itinéraires installés et vos plannings restent sur votre iPhone pour une utilisation hors ligne. Les fonds de carte nécessitent un téléchargement séparé dans le mode Sentier. Testez les deux en mode avion avant le départ.",
         "Location on the map": "Position sur la carte",
         "In iPhone Settings, open Privacy & Security → Location Services → LST Camino and allow location while using the app. The planner can still be used without location access.": "Dans Réglages sur l’iPhone, ouvrez Confidentialité et sécurité → Service de localisation → LST Camino et autorisez la localisation pendant l’utilisation. Le planificateur reste utilisable sans accès à votre position.",
         "Restore a route": "Restaurer un parcours",
@@ -720,16 +724,18 @@
         "Why is a purchased route not appearing?": "Pourquoi un parcours acheté n’apparaît-il pas ?",
         "Check that you are signed into both the Long Slow Travel account used for the purchase and the Apple Account that completed it. Open Content, refresh, then choose Restore Purchases. If it still does not appear, email support with the route name and any on-screen message. Never send your password or full purchase receipt.": "Vérifiez que vous êtes connecté au compte Long Slow Travel utilisé pour l’achat et au compte Apple qui l’a effectué. Ouvrez Contenu, actualisez, puis choisissez Restaurer les achats. S’il n’apparaît toujours pas, écrivez à l’assistance avec le nom du parcours et le message affiché. N’envoyez jamais votre mot de passe ni le reçu complet.",
         "Will my plan work in airplane mode?": "Mon programme fonctionnera-t-il en mode avion ?",
-        "Yes, once the route content has been installed. Your schedules are stored locally. Download and open the route before departure, then test it briefly in airplane mode while you still have a connection available.": "Oui, une fois le contenu du parcours installé. Vos programmes sont stockés localement. Téléchargez et ouvrez le parcours avant le départ, puis testez-le brièvement en mode avion tant que vous avez encore une connexion.",
+        "Your installed route content and schedules remain available offline. Basemap tiles are separate: open a day’s map, enter Trail Mode, choose Download, and wait for “Offline map ready for this stage”. Repeat for each stage you need.": "Le contenu de vos itinéraires installés et vos plannings restent disponibles hors ligne. Les fonds de carte se téléchargent séparément : ouvrez la carte d’une journée, passez au mode Sentier, choisissez « Télécharger » et attendez « Carte hors ligne prête pour cette étape ». Répétez l’opération pour chaque étape nécessaire.",
         "How do I opt out of Mapbox telemetry?": "Comment désactiver la télémétrie Mapbox ?",
-        "Open the attribution control shown on a map in LST Camino Planner. Mapbox provides the telemetry preference there. You can also deny location access in iPhone Settings; the planner’s route information remains available without showing your live position.": "Ouvrez le contrôle d’attribution affiché sur une carte dans LST Camino Planner. Mapbox y propose le réglage de télémétrie. Vous pouvez aussi refuser la localisation dans les Réglages de l’iPhone ; les informations du parcours restent accessibles sans afficher votre position en direct.",
+        "In LST Camino, open the Mapbox attribution (info) control on a map and change the telemetry preference there. The iPhone location permission is a separate control; denying it does not replace opting out of telemetry.": "Dans LST Camino, ouvrez le bouton d’attribution (informations) de Mapbox sur une carte et modifiez-y la préférence de télémétrie. L’autorisation de localisation de l’iPhone est un réglage distinct ; la refuser ne remplace pas la désactivation de la télémétrie.",
         "How do I delete my account?": "Comment supprimer mon compte ?",
         "In LST Camino Planner, open": "Dans LST Camino Planner, ouvrez",
-        "Account → Delete Account": "Compte → Supprimer le compte",
+        "Account → Settings → Delete Account": "Compte → Réglages → Supprimer le compte",
         ", enter your current password, and confirm the permanent deletion. This removes your server account, authentication token, synced schedules, profile, and route access associated with the account. Guest schedules stay on your device. App Store purchases remain with your Apple Account and may be restored after you create or sign in to an account again.": ", saisissez votre mot de passe actuel et confirmez la suppression définitive. Votre compte serveur, jeton, programmes synchronisés, profil et accès aux parcours associés sont supprimés. Les programmes invités restent sur l’appareil. Les achats App Store restent liés à votre compte Apple et peuvent être restaurés après avoir recréé un compte ou vous être reconnecté.",
         "If you cannot access the app, email support from the address associated with your account.": "Si vous ne pouvez pas accéder à l’app, écrivez à l’assistance depuis l’adresse associée à votre compte.",
         "How do I report incorrect route or accommodation information?": "Comment signaler une information erronée sur un parcours ou un hébergement ?",
-        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Pour un hébergement, utilisez l’action de correction dans l’app lorsqu’elle est disponible ; elle prépare les données d’identification. Pour un parcours ou un lieu, écrivez à l’assistance en indiquant le parcours, l’étape, le lieu et la correction proposée."
+        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Pour un hébergement, utilisez l’action de correction dans l’app lorsqu’elle est disponible ; elle prépare les données d’identification. Pour un parcours ou un lieu, écrivez à l’assistance en indiquant le parcours, l’étape, le lieu et la correction proposée.",
+        "Before departure, turn on airplane mode and turn off Wi-Fi, then check your routes, schedules, and downloaded stage maps. Downloads cover the selected stage area, not every map area or zoom level. Sign-in, purchases, restoration, and sync require an internet connection.": "Avant le départ, activez le mode avion et désactivez le Wi-Fi, puis vérifiez vos itinéraires, plannings et cartes d’étapes téléchargées. Les téléchargements couvrent la zone de l’étape choisie, pas toutes les zones ni tous les niveaux de zoom. La connexion au compte, les achats, leur restauration et la synchronisation nécessitent internet.",
+        "Trail Mode shows your location only while the app is open. It does not provide background tracking or emergency monitoring.": "Le mode Sentier affiche votre position uniquement lorsque l’app est ouverte. Il n’assure ni suivi en arrière-plan ni surveillance d’urgence."
       },
       "it": {
         "LST Camino Planner support": "Assistenza LST Camino Planner",
@@ -746,7 +752,7 @@
         "Quick answers": "Risposte rapide",
         "Start here.": "Inizia qui.",
         "Offline access": "Accesso offline",
-        "Open the route while connected and install its content before you leave reliable Wi-Fi. Installed routes and schedules remain useful without a connection.": "Apri il percorso mentre sei online e installane i contenuti prima di lasciare una rete Wi-Fi affidabile. Percorsi e programmi installati restano utilizzabili senza connessione.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "I contenuti dei percorsi installati e i programmi restano sul tuo iPhone per l’uso offline. Le mappe di base richiedono un download separato in modalità Sentiero. Prova entrambi in modalità aereo prima di partire.",
         "Location on the map": "Posizione sulla mappa",
         "In iPhone Settings, open Privacy & Security → Location Services → LST Camino and allow location while using the app. The planner can still be used without location access.": "Nelle Impostazioni dell’iPhone apri Privacy e sicurezza → Localizzazione → LST Camino e consenti la posizione durante l’uso. Il pianificatore funziona anche senza accesso alla posizione.",
         "Restore a route": "Ripristina un percorso",
@@ -760,16 +766,18 @@
         "Why is a purchased route not appearing?": "Perché un percorso acquistato non compare?",
         "Check that you are signed into both the Long Slow Travel account used for the purchase and the Apple Account that completed it. Open Content, refresh, then choose Restore Purchases. If it still does not appear, email support with the route name and any on-screen message. Never send your password or full purchase receipt.": "Verifica di aver effettuato l’accesso sia all’account Long Slow Travel usato per l’acquisto sia all’account Apple che lo ha completato. Apri Contenuti, aggiorna e scegli Ripristina acquisti. Se non compare, scrivi all’assistenza indicando il percorso e il messaggio visualizzato. Non inviare mai password o ricevuta completa.",
         "Will my plan work in airplane mode?": "Il programma funzionerà in modalità aereo?",
-        "Yes, once the route content has been installed. Your schedules are stored locally. Download and open the route before departure, then test it briefly in airplane mode while you still have a connection available.": "Sì, dopo aver installato il contenuto del percorso. I programmi sono salvati localmente. Scarica e apri il percorso prima di partire, poi provalo brevemente in modalità aereo mentre hai ancora una connessione.",
+        "Your installed route content and schedules remain available offline. Basemap tiles are separate: open a day’s map, enter Trail Mode, choose Download, and wait for “Offline map ready for this stage”. Repeat for each stage you need.": "I contenuti dei percorsi installati e i programmi restano disponibili offline. Le mappe di base si scaricano separatamente: apri la mappa di un giorno, entra in modalità Sentiero, scegli «Scarica» e attendi «Mappa offline pronta per questa tappa». Ripeti per ogni tappa necessaria.",
         "How do I opt out of Mapbox telemetry?": "Come disattivo la telemetria Mapbox?",
-        "Open the attribution control shown on a map in LST Camino Planner. Mapbox provides the telemetry preference there. You can also deny location access in iPhone Settings; the planner’s route information remains available without showing your live position.": "Apri il controllo di attribuzione mostrato su una mappa in LST Camino Planner. Lì Mapbox offre l’impostazione della telemetria. Puoi anche negare la posizione nelle Impostazioni dell’iPhone; le informazioni del percorso restano disponibili senza mostrare la posizione in tempo reale.",
+        "In LST Camino, open the Mapbox attribution (info) control on a map and change the telemetry preference there. The iPhone location permission is a separate control; denying it does not replace opting out of telemetry.": "In LST Camino, apri il controllo di attribuzione (informazioni) di Mapbox su una mappa e modifica lì la preferenza di telemetria. Il permesso di localizzazione dell’iPhone è un’impostazione separata: negarlo non equivale a disattivare la telemetria.",
         "How do I delete my account?": "Come elimino il mio account?",
         "In LST Camino Planner, open": "In LST Camino Planner apri",
-        "Account → Delete Account": "Account → Elimina account",
+        "Account → Settings → Delete Account": "Account → Impostazioni → Elimina account",
         ", enter your current password, and confirm the permanent deletion. This removes your server account, authentication token, synced schedules, profile, and route access associated with the account. Guest schedules stay on your device. App Store purchases remain with your Apple Account and may be restored after you create or sign in to an account again.": ", inserisci la password attuale e conferma l’eliminazione definitiva. Verranno rimossi account sul server, token, programmi sincronizzati, profilo e accessi ai percorsi associati. I programmi ospite restano sul dispositivo. Gli acquisti App Store restano legati all’account Apple e possono essere ripristinati dopo aver creato o usato di nuovo un account.",
         "If you cannot access the app, email support from the address associated with your account.": "Se non puoi accedere all’app, scrivi all’assistenza dall’indirizzo associato al tuo account.",
         "How do I report incorrect route or accommodation information?": "Come segnalo informazioni errate su percorsi o alloggi?",
-        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Per gli alloggi usa l’azione di correzione nell’app quando disponibile: prepara i dati identificativi. Per un percorso o luogo, scrivi all’assistenza indicando percorso, tappa, luogo e correzione proposta."
+        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Per gli alloggi usa l’azione di correzione nell’app quando disponibile: prepara i dati identificativi. Per un percorso o luogo, scrivi all’assistenza indicando percorso, tappa, luogo e correzione proposta.",
+        "Before departure, turn on airplane mode and turn off Wi-Fi, then check your routes, schedules, and downloaded stage maps. Downloads cover the selected stage area, not every map area or zoom level. Sign-in, purchases, restoration, and sync require an internet connection.": "Prima di partire, attiva la modalità aereo e disattiva il Wi-Fi, poi controlla percorsi, programmi e mappe delle tappe scaricate. I download coprono l’area della tappa selezionata, non tutte le aree o i livelli di zoom. Accesso, acquisti, ripristino e sincronizzazione richiedono una connessione internet.",
+        "Trail Mode shows your location only while the app is open. It does not provide background tracking or emergency monitoring.": "La modalità Sentiero mostra la tua posizione solo mentre l’app è aperta. Non offre tracciamento in background né monitoraggio delle emergenze."
       },
       "pt": {
         "LST Camino Planner support": "Suporte do LST Camino Planner",
@@ -786,7 +794,7 @@
         "Quick answers": "Respostas rápidas",
         "Start here.": "Comece aqui.",
         "Offline access": "Acesso offline",
-        "Open the route while connected and install its content before you leave reliable Wi-Fi. Installed routes and schedules remain useful without a connection.": "Abra o percurso enquanto está ligado e instale o conteúdo antes de deixar uma rede Wi-Fi fiável. Os percursos e planos instalados continuam úteis sem ligação.",
+        "Installed route content and schedules stay on your iPhone for offline use. Basemap tiles need a separate download in Trail Mode. Test both in airplane mode before departure.": "Os conteúdos dos percursos instalados e os planos ficam no teu iPhone para utilização offline. Os mapas de base precisam de uma descarga separada no modo Trilho. Testa ambos em modo de voo antes da partida.",
         "Location on the map": "Localização no mapa",
         "In iPhone Settings, open Privacy & Security → Location Services → LST Camino and allow location while using the app. The planner can still be used without location access.": "Nas Definições do iPhone, abra Privacidade e segurança → Serviços de localização → LST Camino e permita a localização durante a utilização. O planeador também funciona sem acesso à localização.",
         "Restore a route": "Restaurar um percurso",
@@ -800,16 +808,18 @@
         "Why is a purchased route not appearing?": "Porque não aparece um percurso comprado?",
         "Check that you are signed into both the Long Slow Travel account used for the purchase and the Apple Account that completed it. Open Content, refresh, then choose Restore Purchases. If it still does not appear, email support with the route name and any on-screen message. Never send your password or full purchase receipt.": "Confirme que iniciou sessão na conta Long Slow Travel usada para a compra e na conta Apple que a concluiu. Abra Conteúdo, atualize e escolha Restaurar compras. Se continuar sem aparecer, escreva ao suporte com o nome do percurso e a mensagem mostrada. Nunca envie a palavra-passe nem o recibo completo.",
         "Will my plan work in airplane mode?": "O meu plano funciona em modo de voo?",
-        "Yes, once the route content has been installed. Your schedules are stored locally. Download and open the route before departure, then test it briefly in airplane mode while you still have a connection available.": "Sim, depois de instalar o conteúdo do percurso. Os planos são guardados localmente. Descarregue e abra o percurso antes da partida e teste-o brevemente em modo de voo enquanto ainda tem ligação.",
+        "Your installed route content and schedules remain available offline. Basemap tiles are separate: open a day’s map, enter Trail Mode, choose Download, and wait for “Offline map ready for this stage”. Repeat for each stage you need.": "Os conteúdos dos percursos instalados e os planos continuam disponíveis offline. Os mapas de base são descarregados à parte: abre o mapa de um dia, entra no modo Trilho, escolhe «Transferir» e espera por «Mapa offline pronto para esta etapa». Repete para cada etapa necessária.",
         "How do I opt out of Mapbox telemetry?": "Como desativo a telemetria da Mapbox?",
-        "Open the attribution control shown on a map in LST Camino Planner. Mapbox provides the telemetry preference there. You can also deny location access in iPhone Settings; the planner’s route information remains available without showing your live position.": "Abra o controlo de atribuição apresentado num mapa do LST Camino Planner. A Mapbox disponibiliza aí a preferência de telemetria. Também pode negar a localização nas Definições do iPhone; a informação do percurso continua disponível sem mostrar a posição em direto.",
+        "In LST Camino, open the Mapbox attribution (info) control on a map and change the telemetry preference there. The iPhone location permission is a separate control; denying it does not replace opting out of telemetry.": "Em LST Camino, abre o controlo de atribuição (informações) da Mapbox num mapa e altera aí a preferência de telemetria. A permissão de localização do iPhone é um controlo separado; recusá-la não substitui a desativação da telemetria.",
         "How do I delete my account?": "Como elimino a minha conta?",
         "In LST Camino Planner, open": "No LST Camino Planner, abra",
-        "Account → Delete Account": "Conta → Eliminar conta",
+        "Account → Settings → Delete Account": "Conta → Definições → Eliminar conta",
         ", enter your current password, and confirm the permanent deletion. This removes your server account, authentication token, synced schedules, profile, and route access associated with the account. Guest schedules stay on your device. App Store purchases remain with your Apple Account and may be restored after you create or sign in to an account again.": ", introduza a palavra-passe atual e confirme a eliminação permanente. Isto remove a conta do servidor, token, planos sincronizados, perfil e acessos a percursos associados. Os planos de convidado permanecem no dispositivo. As compras da App Store continuam ligadas à conta Apple e podem ser restauradas após criar uma conta ou iniciar sessão novamente.",
         "If you cannot access the app, email support from the address associated with your account.": "Se não conseguir aceder à aplicação, escreva ao suporte a partir do endereço associado à sua conta.",
         "How do I report incorrect route or accommodation information?": "Como comunico informações incorretas sobre percursos ou alojamentos?",
-        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Para dados de alojamento, use a ação de correção na aplicação quando estiver disponível; ela prepara os dados de identificação. Para um percurso ou local, escreva ao suporte indicando percurso, etapa, local e correção sugerida."
+        "For accommodation details, use the correction action in the app when available; it prepares the identifying details for you. For a route or place, email support with the route, stage, place name, and the correction you recommend.": "Para dados de alojamento, use a ação de correção na aplicação quando estiver disponível; ela prepara os dados de identificação. Para um percurso ou local, escreva ao suporte indicando percurso, etapa, local e correção sugerida.",
+        "Before departure, turn on airplane mode and turn off Wi-Fi, then check your routes, schedules, and downloaded stage maps. Downloads cover the selected stage area, not every map area or zoom level. Sign-in, purchases, restoration, and sync require an internet connection.": "Antes da partida, ativa o modo de voo e desliga o Wi-Fi. Depois verifica os percursos, planos e mapas de etapas descarregados. As descargas cobrem a área da etapa selecionada, não todas as áreas ou níveis de zoom. Iniciar sessão, comprar, restaurar compras e sincronizar requerem ligação à internet.",
+        "Trail Mode shows your location only while the app is open. It does not provide background tracking or emergency monitoring.": "O modo Trilho mostra a tua localização apenas enquanto a app está aberta. Não disponibiliza seguimento em segundo plano nem monitorização de emergências."
       }
     }
   }

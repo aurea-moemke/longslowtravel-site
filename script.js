@@ -150,13 +150,12 @@ function showLegalLanguageNotice(language, catalog) {
 async function localizePage() {
   const language = preferredLanguage();
   const page = document.body.dataset.page;
-  document.documentElement.lang = language;
-
   try {
     const response = await fetch(new URL("translations.json", scriptURL));
     if (!response.ok) throw new Error(`Translation catalog returned ${response.status}`);
 
     const catalog = await response.json();
+    document.documentElement.lang = language;
     const strings = {
       ...(catalog.shared[language] || {}),
       ...(catalog.pages[page]?.[language] || {}),
