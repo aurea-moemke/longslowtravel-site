@@ -8,14 +8,16 @@ AI-assisted work must begin with the canonical cross-repository
 [README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
 in the backend repository.
 
-## Production-readiness review (7 September 2026)
+## Production-readiness review (updated 10 September 2026)
 
 See [the release review and remaining legal gates](docs/production-readiness-review.md).
-The site branch is `release/website-production-readiness`. Product copy and all
-five translations are updated; Privacy/Imprint are **not yet legally cleared**.
-Operator facts, provider arrangements, consent and reviewed legal-language
-versions need a qualified German/EU review. Mobile/desktop browser verification
-also remains to be done; this environment could not launch the preview.
+Current follow-up branch: `fix/release-privacy-disclosures`. Privacy now explains
+day journals and deletion behavior; Imprint includes the owner's public phone.
+A German privacy review draft is in `docs/privacy-de-review-draft.md`, not on the
+public policy page. Operator/provider/retention and SDK consent facts still need
+resolution. Paid professional review is recommended, not a mandatory certificate;
+deferring it does not defer compliance until revenue. No legal clearance is claimed.
+Live URLs and device/browser behavior still need verification.
 
 Keep route content and basemap downloads distinct in all future wording.
 Trail Mode is foreground-only. Preserve the planning-aid safety warning.

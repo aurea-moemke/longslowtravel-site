@@ -1,5 +1,77 @@
 # Website production-readiness review
 
+## Current release follow-up — 10 September 2026
+
+This checkpoint supersedes the older release sequence below. iOS work is on
+`fix/release-privacy-links` (from merged main `2c8a1fe`); website work is on
+`fix/release-privacy-disclosures`. No changes from this follow-up are deployed.
+
+- Added unauthenticated Account → Privacy Policy and Imprint links, translations,
+  accessibility labels/hints and tests. The App Store Connect URL still needs
+  confirmation in that dashboard; adding a link does not set it.
+- Added the owner-approved public telephone **+49 821 7104984** to Imprint.
+  Other provider identity/address/business/VAT/registration statements were not
+  newly confirmed. Do not interpret providing a phone as confirming them.
+- Updated English Privacy for day journals and visibility, no end-to-end journal
+  encryption, map delivery requests without GPS permission, external providers,
+  PDF sharing and actual soft-deletion behavior.
+- Current backend marks deleted schedules/days instead of purging their content
+  on a timer. Individual journal deletion clears its text when synced. Account
+  deletion removes account-linked records from the active database.
+  **Explaining retention is not sufficient justification for indefinite storage.**
+- Prepared [German privacy review draft](privacy-de-review-draft.md), not a
+  published/approved translation. It explicitly identifies unresolved facts.
+- Added Customer Support to the iOS privacy manifest. See sibling iOS
+  `docs/PRIVACY_RELEASE_REVIEW.md` for the evidence table, pinned SDK versions
+  and uncompleted archive/runtime checks. No telemetry settings were changed.
+
+### What is actually required versus recommended
+
+The owner confirmed that professional legal review is outstanding and asked
+whether it can wait until the app earns money. **Hiring a lawyer is recommended,
+not a general mandatory release certificate.** Actual compliance cannot be
+deferred until revenue: GDPR applies to relevant personal-data processing by
+small businesses too.
+[European Commission guidance](https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/application-gdpr_en)
+Apple requires compliant behavior and an accessible policy in the app and
+App Store Connect, not a lawyer's certificate.
+[Apple privacy requirements](https://developer.apple.com/app-store/review/guidelines/#privacy)
+
+Do not mark the following unresolved requirements as passed simply because paid
+legal review is deferred:
+
+| Item | Evidence still needed |
+| --- | --- |
+| Mapbox | Actual archived SDK manifests/events, reachable opt-out, appropriate legal basis and any required prior consent; location permission alone does not settle this |
+| Retention | Implemented periods or defensible review/deletion criteria for soft-deleted schedules, support, logs, email challenges, email delivery records and backups |
+| Providers/transfers | Actual contracted entities/roles, agreements, processing locations and applicable transfer safeguards; no guessed “all EU” or blanket DPF/SCC claim |
+| Business particulars | Confirm existing address, freelancer/business status and whether VAT/economic IDs have been issued; no private tax number |
+| Understandable notices | Approve a usable German notice and assess other audiences; the German document here is still a draft |
+| Children/consumer matters | Appropriate audience/age rules, paid-content terms and applicable consumer information; avoid invented assurances |
+| App Store/live release | Final privacy answers, archive report, working published URLs and device accessibility checks |
+
+The earlier wording requiring qualified legal “approval” as an automatic release
+step was too broad. The operator may choose a documented self-assessment or
+professional help, but remains responsible for resolving the substantive issues.
+This source review is neither route nor legal certification.
+
+### Verification limits for this follow-up
+
+Live policy URL requests failed DNS resolution, including an approved retry.
+Local embedded Xcode SDK artifacts were inaccessible. No App Store dashboard,
+provider contract, network capture or production retention setting was inspected.
+Final source/site checks are recorded in the handoff; do not substitute them
+for the remaining operational checks above.
+
+Verification completed: 21 website regression tests; Swift syntax parsing,
+standalone public-link assertions, privacy-plist checks, five-language coverage,
+Xcode string-catalog compilation/symbol generation, and clean diff checks.
+Full Xcode/unit/UI execution remains pending; standalone unit-test typechecking
+could not load the Testing module in this environment. No device, live-browser
+or legal-compliance pass is claimed.
+
+## Historical review — 7 September 2026
+
 Reviewed: 7 September 2026. Scope: the local site release branch, relevant iOS
 source, and official German/EU guidance. This is an implementation and legal-gap
 review, **not a lawyer’s opinion or legal sign-off**. No lawyer has been
@@ -46,7 +118,8 @@ also describe the paid app business and whether a Wirtschafts-Identifikationsnum
 has been issued. Disclose applicable business identifiers, not a private tax
 number. [DDG §5](https://www.gesetze-im-internet.de/ddg/__5.html)
 
-Only email is currently offered. Have the reviewer approve an additional rapid,
+The original review found only email. The 10 September follow-up adds the
+owner-supplied telephone above. Assess that it provides an effective rapid,
 direct contact channel. A telephone number is not the only possible solution;
 an effectively operated enquiry form can qualify. Do not invent a phone number
 or response-time promise. [CJEU C-298/07, paragraphs 25–40](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:62007CJ0298)
@@ -139,8 +212,9 @@ Its governing regulation was repealed from 20 July 2025.
 
 ## Release sequence
 
-1. Provide the confirmed operator/provider facts privately to a German/EU legal
-   reviewer; obtain approval of Privacy and Imprint and required translations.
+1. Resolve and document operator/provider facts, required controls and accurate
+   notices/translations. A qualified German/EU review is recommended where needed,
+   but paid external sign-off is not a universal prerequisite.
 2. Implement any legal/app changes and update policy dates on publication.
    Re-run website tests.
 3. Preview home, support, privacy and imprint at iPhone and desktop widths.
