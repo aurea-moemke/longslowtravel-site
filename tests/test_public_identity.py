@@ -148,6 +148,34 @@ class PublicIdentityTests(unittest.TestCase):
         self.assertIn("Mapbox", privacy)
         self.assertIn("telemetry", privacy)
 
+    def test_privacy_explains_journal_visibility_and_deletion_limits(self):
+        privacy = (ROOT / "privacy/index.html").read_text(encoding="utf-8")
+        for text in (
+            "day journal text, journal timestamps and display preferences",
+            "Hiding a journal under the day title changes its display only",
+            "not end-to-end encrypted",
+            "does not automatically purge them after a fixed number of days",
+            "clears its text and timestamp when the change syncs",
+            "even without location permission",
+            "Turning off telemetry does not turn off map delivery requests",
+            "Review it before sharing",
+        ):
+            with self.subTest(text=text):
+                self.assertIn(text, privacy)
+
+    def test_imprint_uses_the_owner_approved_public_phone(self):
+        imprint = (ROOT / "imprint/index.html").read_text(encoding="utf-8")
+        self.assertIn('href="tel:+498217104984">+49 821 7104984</a>', imprint)
+        self.assertIn("support@longslowtravel.com", imprint)
+
+    def test_legal_draft_does_not_claim_revenue_exemption_or_external_approval(self):
+        draft = (ROOT / "docs/privacy-de-review-draft.md").read_text(encoding="utf-8")
+        self.assertIn("Nicht veröffentlicht und nicht rechtlich", draft)
+        self.assertIn("Vor Veröffentlichung", draft)
+        review = (ROOT / "docs/production-readiness-review.md").read_text(encoding="utf-8")
+        self.assertIn("not a general mandatory release certificate", review)
+        self.assertIn("cannot be\ndeferred until revenue", review)
+
     def test_legal_content_keeps_its_actual_language(self):
         for page, language in (("privacy", "en"), ("imprint", "de")):
             source = (ROOT / page / "index.html").read_text(encoding="utf-8")
