@@ -116,6 +116,8 @@ p { margin: 0; }
 
 .screen-frame { position: relative; z-index: 1; display: block; overflow: hidden; background: var(--cream); border: 1px solid rgba(11, 59, 49, .08); border-radius: 43px; box-shadow: var(--shadow); }
 .screen-frame img { width: calc(100% + 10px); max-width: none; height: auto; margin: -5px; }
+.journeys-capture .screen-frame { aspect-ratio: 447 / 987; border-radius: 48px; }
+.journeys-capture .screen-frame img { position: absolute; top: -2.84%; left: -6.71%; width: calc(100% * 507 / 447); margin: 0; }
 
 .phone-bar { height: 36px; display: flex; align-items: center; justify-content: space-between; padding: 0 21px; color: var(--pine); font-size: 9px; font-weight: 800; }
 .app-screen { font-family: var(--sans); }
