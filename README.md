@@ -8,16 +8,19 @@ AI-assisted work must begin with the canonical cross-repository
 [README-AI.md](https://github.com/aurea-moemke/longslowtravel-backend/blob/main/README-AI.md)
 in the backend repository.
 
-## Production-readiness review (updated 10 September 2026)
+## Production-readiness review (updated 16 November 2026)
 
 See [the release review and remaining legal gates](docs/production-readiness-review.md).
-Current follow-up branch: `fix/release-privacy-disclosures`. Privacy now explains
-day journals and deletion behavior; Imprint includes the owner's public phone.
-A German privacy review draft is in `docs/privacy-de-review-draft.md`, not on the
-public policy page. Operator/provider/retention and SDK consent facts still need
-resolution. Paid professional review is recommended, not a mandatory certificate;
-deferring it does not defer compliance until revenue. No legal clearance is claimed.
-Live URLs and device/browser behavior still need verification.
+Current follow-up branch: `fix/mapbox-privacy-disclosures`. The public privacy
+policy now reflects the privacy report generated from the archived iOS build 42,
+including Mapbox's declared unlinked location, SDK identifier, usage, performance,
+and diagnostic data for app functionality and analytics. Privacy also explains day
+journals and deletion behavior; Imprint includes the owner's public phone. A German
+privacy review draft is in `docs/privacy-de-review-draft.md`, not on the public
+policy page. Operator/provider/retention and SDK consent facts still need resolution.
+Paid professional review is recommended, not a mandatory certificate; deferring it
+does not defer compliance until revenue. No legal clearance is claimed. Live URLs
+and device/browser behavior still need verification.
 
 Keep route content and basemap downloads distinct in all future wording.
 Trail Mode is foreground-only. Preserve the planning-aid safety warning.
@@ -27,8 +30,8 @@ Use `LST Camino` for iPhone Settings, not the longer App Store name.
 
 - `/` — branded LST Camino Planner landing page
 - `/support/` — public support, troubleshooting, and account-deletion guidance
-- `/privacy/` — privacy policy aligned with the app's current TestFlight privacy
-  manifest and production behavior
+- `/privacy/` — privacy policy aligned with the archived build 42 privacy report,
+  current privacy manifests, and production behavior
 - `/imprint/` — German provider identification for the independent operator
 
 The site is plain HTML, CSS, and JavaScript. It has no build step, external font
