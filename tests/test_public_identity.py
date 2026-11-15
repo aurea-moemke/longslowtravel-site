@@ -148,6 +148,22 @@ class PublicIdentityTests(unittest.TestCase):
         self.assertIn("Mapbox", privacy)
         self.assertIn("telemetry", privacy)
 
+    def test_privacy_discloses_archived_mapbox_sdk_data_categories(self):
+        privacy = (ROOT / "privacy/index.html").read_text(encoding="utf-8")
+        for text in (
+            "precise or coarse location",
+            "a Mapbox SDK user identifier",
+            "product-interaction and other usage data",
+            "performance data",
+            "other diagnostic data",
+            "for app functionality and analytics",
+            "as not linked to your identity",
+            "as not used for tracking",
+            "describes its location and usage telemetry as de-identified",
+        ):
+            with self.subTest(text=text):
+                self.assertIn(text, privacy)
+
     def test_privacy_explains_journal_visibility_and_deletion_limits(self):
         privacy = (ROOT / "privacy/index.html").read_text(encoding="utf-8")
         for text in (

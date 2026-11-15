@@ -1,10 +1,9 @@
 # Website production-readiness review
 
-## Current release follow-up — 10 September 2026
+## Current release follow-up — 16 November 2026
 
-This checkpoint supersedes the older release sequence below. iOS work is on
-`fix/release-privacy-links` (from merged main `2c8a1fe`); website work is on
-`fix/release-privacy-disclosures`. No changes from this follow-up are deployed.
+This checkpoint supersedes the older release sequence below. The website work is
+on `fix/mapbox-privacy-disclosures`. No changes from this follow-up are deployed.
 
 - Added unauthenticated Account → Privacy Policy and Imprint links, translations,
   accessibility labels/hints and tests. The App Store Connect URL still needs
@@ -21,9 +20,11 @@ This checkpoint supersedes the older release sequence below. iOS work is on
   **Explaining retention is not sufficient justification for indefinite storage.**
 - Prepared [German privacy review draft](privacy-de-review-draft.md), not a
   published/approved translation. It explicitly identifies unresolved facts.
-- Added Customer Support to the iOS privacy manifest. See sibling iOS
-  `docs/PRIVACY_RELEASE_REVIEW.md` for the evidence table, pinned SDK versions
-  and uncompleted archive/runtime checks. No telemetry settings were changed.
+- The privacy report generated from the archived iOS build 42 confirms the bundled
+  declarations for Mapbox location, SDK identifier, product-interaction and other
+  usage, performance, and other diagnostic data. The public policy now states their
+  declared purposes (app functionality and analytics) and status (not linked and
+  not used for tracking). No telemetry settings were changed.
 
 ### What is actually required versus recommended
 
@@ -42,7 +43,7 @@ legal review is deferred:
 
 | Item | Evidence still needed |
 | --- | --- |
-| Mapbox | Actual archived SDK manifests/events, reachable opt-out, appropriate legal basis and any required prior consent; location permission alone does not settle this |
+| Mapbox | The archived build 42 privacy report is now recorded; actual runtime events, reachable telemetry preference, appropriate legal basis and any required prior consent still need review; location permission alone does not settle this |
 | Retention | Implemented periods or defensible review/deletion criteria for soft-deleted schedules, support, logs, email challenges, email delivery records and backups |
 | Providers/transfers | Actual contracted entities/roles, agreements, processing locations and applicable transfer safeguards; no guessed “all EU” or blanket DPF/SCC claim |
 | Business particulars | Confirm existing address, freelancer/business status and whether VAT/economic IDs have been issued; no private tax number |
@@ -63,12 +64,9 @@ provider contract, network capture or production retention setting was inspected
 Final source/site checks are recorded in the handoff; do not substitute them
 for the remaining operational checks above.
 
-Verification completed: 21 website regression tests; Swift syntax parsing,
-standalone public-link assertions, privacy-plist checks, five-language coverage,
-Xcode string-catalog compilation/symbol generation, and clean diff checks.
-Full Xcode/unit/UI execution remains pending; standalone unit-test typechecking
-could not load the Testing module in this environment. No device, live-browser
-or legal-compliance pass is claimed.
+The build 42 archive privacy report was inspected and reconciled with the public
+Mapbox disclosure. All 22 website regression tests pass on this follow-up branch.
+No device, live-browser or legal-compliance pass is claimed by this website review.
 
 ## Historical review — 7 September 2026
 
@@ -145,11 +143,15 @@ agreement, retention schedule or transfer safeguard was verified in this review.
 ### Mapbox and local storage
 
 Mapbox documents the telemetry opt-out provided through its attribution control.
-That alone does not establish that the complete EU consent/legal-basis setup is
-sufficient. Have the reviewer assess actual SDK events, defaults, purposes,
+The build 42 archive privacy report confirms bundled declarations for precise and
+coarse location, a Mapbox SDK user identifier, product interaction and other usage,
+performance, and other diagnostic data for app functionality and analytics. Those
+declarations mark the data as not linked and not used for tracking. This evidence
+does not by itself establish actual runtime events or that the complete EU
+consent/legal-basis setup is sufficient. Have the reviewer assess defaults,
 provider roles and any consent needed before optional processing. iOS location
-permission and telemetry preferences are separate. Align the approved outcome
-with app behavior and App Store privacy declarations.
+permission and telemetry preferences are separate. Align the approved outcome with
+app behavior and App Store privacy declarations.
 [Mapbox SDK documentation](https://docs.mapbox.com/ios/maps/guides/)
 
 The website’s local storage remembers a language explicitly selected by the

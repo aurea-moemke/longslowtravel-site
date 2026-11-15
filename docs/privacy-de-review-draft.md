@@ -1,6 +1,6 @@
 # Datenschutzerklärung — deutscher Entwurf zur rechtlichen Freigabe
 
-Stand des Entwurfs: 10. September 2026. **Nicht veröffentlicht und nicht rechtlich
+Stand des Entwurfs: 16. November 2026. **Nicht veröffentlicht und nicht rechtlich
 freigegeben.** Vorlage zur Prüfung, keine Rechtsberatung. Vor Veröffentlichung
 müssen insbesondere Anbieterangaben, Rechtsgrundlagen der Mapbox-Verarbeitung,
 Auftragsverarbeitungsverträge, Drittlandtransfers, Löschfristen und die
@@ -20,8 +20,10 @@ Die kostenlose Beispielroute und lokale Reisepläne können ohne Konto genutzt
 werden. Long Slow Travel verkauft keine personenbezogenen Daten, zeigt keine
 Werbung und verfolgt Nutzer nicht zu Werbezwecken über fremde Apps oder Websites.
 Die aktuelle GPS-Position wird nicht an das Long-Slow-Travel-Backend gesendet.
-Der Kartendienst Mapbox verarbeitet jedoch Kartenanfragen und kann Standort-
-und Nutzungsdaten für seine Telemetrie erhalten.
+Der Kartendienst Mapbox verarbeitet jedoch Kartenanfragen. Die im archivierten
+iOS-Build enthaltenen SDK-Datenschutzerklärungen nennen nicht mit der Identität
+verknüpfte Standort-, Nutzungs-, Leistungs- und Diagnosedaten für App-Funktionalität
+und Analysen.
 
 ## Welche Daten verarbeitet werden
 
@@ -47,11 +49,16 @@ und Nutzungsdaten für seine Telemetrie erhalten.
   Karten- oder Bankdaten. Produkt, Transaktionskennungen, Kaufstatus und Kaufdatum
   dienen der Prüfung und Wiederherstellung des Routenzugangs und werden dem
   Long-Slow-Travel-Konto zugeordnet.
-- **Standort und Karten:** Nach der Standortfreigabe zeigt Trail Mode die
+- **Standort, Karten und Diagnosen:** Nach der Standortfreigabe zeigt Trail Mode die
   Position, solange die App geöffnet ist. Es gibt keine Hintergrundaufzeichnung
-  oder Notfallüberwachung. Mapbox kann bei Standorterfassung de-identifizierte
-  Standort- und Nutzungsdaten erhalten. Long Slow Travel verknüpft diese nicht
-  mit dem Konto und nutzt sie nicht für Werbung. Auch ohne Standortfreigabe
+  oder Notfallüberwachung. Die mit dem archivierten Build gelieferten
+  SDK-Datenschutzerklärungen von Mapbox nennen genauen oder ungefähren Standort,
+  eine Mapbox-SDK-Benutzerkennung, Produktinteraktionen und sonstige Nutzungsdaten,
+  Leistungsdaten und sonstige Diagnosedaten. Mapbox erklärt diese Daten für
+  App-Funktionalität und Analysen, als nicht mit der Identität verknüpft und nicht
+  für Tracking verwendet. Mapbox beschreibt seine Standort- und Nutzungstelemetrie
+  als de-identifiziert. Long Slow Travel verknüpft diese SDK-Telemetrie nicht mit
+  dem Konto und nutzt sie nicht für Werbung. Auch ohne Standortfreigabe
   erhält Mapbox bei Anzeige oder Download von Karten Anfragen zur ausgewählten
   Kartenregion sowie Verbindungsinformationen wie IP-Adresse, App-/SDK-Version
   und angeforderte Kartenressourcen. Die Telemetrie-Abwahl unterbindet nicht die
@@ -96,8 +103,11 @@ ersetzt nicht automatisch eine erforderliche datenschutzrechtliche Einwilligung.
 
 - **Apple:** App-Vertrieb, App-Store-Zahlung und signierte Kaufnachweise;
   [App Store und Datenschutz](https://www.apple.com/legal/privacy/data/en/appstore/).
-- **Mapbox:** Kartendienst, Kartenanfragen und Standort-/Nutzungstelemetrie;
-  Abwahlmöglichkeit über die Quellenangabe auf der Karte;
+- **Mapbox:** Kartendienst und Kartenanfragen; laut den archivierten
+  SDK-Datenschutzerklärungen nicht mit der Identität verknüpfte Standortdaten,
+  SDK-Benutzerkennung, Nutzungs-, Leistungs- und Diagnosedaten für
+  App-Funktionalität und Analysen; Telemetrie-Einstellung über die Quellenangabe
+  auf der Karte;
   [Datenschutzerklärung](https://www.mapbox.com/legal/privacy).
 - **Render:** Konto-API und verwaltete PostgreSQL-Datenbank in Frankfurt;
   Konto- und Synchronisierungsdaten, Verbindungsdaten und Betriebsprotokolle;
